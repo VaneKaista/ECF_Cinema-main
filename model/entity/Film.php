@@ -12,10 +12,10 @@ class Film
     private $affiche;
     private $annee;
 
-    public function __construct($id, $titre, $realisateur,$affiche,$annee)
+    public function __construct(int $id, string $titre, string $realisateur, string $affiche, string $annee)
     {
         $this->setId($id);
-        $this->setTitle($titre);
+        $this->setTitre($titre);
         $this->setRealisateur($realisateur);
         $this->setAffiche($affiche);
         $this->setAnne($annee);
@@ -26,7 +26,7 @@ class Film
         return $this->titre;
     }
 
-    public function setTitle($titre)
+    public function setTitre($titre)
     {
         $this->titre = $titre;
     }
